@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>テキスト配列</title>
+    <!--
+      Copyright (c) 2018 bills-appworks
+      This software is released under the MIT License.
+      http://opensource.org/licenses/mit-license.php
+    -->
+    <link rel="stylesheet" href="text-array.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://rawgithub.com/briangonzalez/jquery.pep.js/master/src/jquery.pep.js"></script>
+    <script src="text-array.js"></script>
+  </head>
+  <body>
+    <!-- コンテンツ領域 -->
+    <div id="content-area">
+      <div id="body_title">テキスト配列</div>
+      <div id="array">
+        <span>配列(JSON形式)</span><span><input id="array-text" type="text" value='["a.txt","b.txt","c.txt","d.txt"]'></span>
+      </div>
+      <div>各領域のアイコンをドラッグ＆ドロップして領域の前後を変更すると上部の「配列(JSON形式)」に反映されます。</div>
+      <div>（初回ドラッグ開始反応しない場合があるので何度か試してください）</div>
+      <hr />
+      <div id="array-gui">
+      </div>
+      <hr />
+      <div id="author">
+        <span>作成者：びるず(<a href="https://twitter.com/billstw" target="_blank">twitter:@billstw</a>)</span>
+      </div>
+      <div id="thanks">
+        <span>Special Thanks:</span>
+        <a href="https://qiita.com/pekoporin/items/65de9d1ee3adc9456b54" target="_blank">Qiita @pekoporin</a>
+        <a href="https://jquery.com/" target="_blank">jQuery</a>
+        <span>...and others</span>
+      </div>
+      <div id="copyright">
+        <span>Copyright (c) 2018 bills-appworks</span>
+      </div>
+      <div id="license">
+        <span>This software is released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT License </a>.</span>
+      </div>
+    </div> <!-- content_area -->
+  </body>
+</html>

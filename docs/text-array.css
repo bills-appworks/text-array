@@ -1,0 +1,76 @@
+﻿/*
+ * テキスト配列
+ * Copyright (c) 2018 bills-appworks
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
+
+html, body {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  background-color: #FFFFFF;
+  font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Meiryo";
+}
+
+/* コンテンツ領域 */
+#content-area {
+  background-color: rgb(255, 255, 255);
+  margin: 0 0 40px 0;
+  border-color: rgb(0, 0, 0);
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  /* コンテンツ領域直下は縦並び */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ブロック */
+.le-block {
+  border-width: thin;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+}
+
+/* ブロック内メニュー部 */
+.le-block__menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+/* 現段階では削除ボタンとコア部分は非表示 */
+.le-block__menu > button:last-child, .le-block-core {
+  display: none;
+}
+
+/* ドロップ可能領域 */
+.le-block-edge {
+  display: none;
+  height: 20px;
+  width: 100%;
+  opacity: 0.6;
+  background-color: yellow;
+  position: relative;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  z-index: 1000;
+}
+
+/* ドロップ可能領域（アクティブ状態） */
+.le-block-edge.pep-dpa {
+  background-color: goldenrod;
+}
+
+hr {
+  width: 100%;
+  border: 1px dashed rgba(0, 0, 0, 0.7);
+}
+
+#thanks a {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
